@@ -60,4 +60,13 @@ template ZkIdentidy(groupSize) {
         sum += equals[i][0].out;
         sum += equals[i][1].out;
     }
+
+    // equals[i][j].out will return 1 if the values are equal
+    // and 0 if the values are not equal
+    // So if the derived public key a point in space
+    // matches a public keys listed in the smart contract, the sum of all the equals[i][j].out should be equal to 2
+    sum === 2;
 }
+
+// Main entry point
+component main = ZkIdentidy(2);
