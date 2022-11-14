@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "circom": "^0.5.46",
+    "circom_runtime": "^0.1.22",
     "circomlib": "^2.0.5",
     "hardhat": "^2.12.2",
     "snarkjs": "^0.5.0",
